@@ -1,9 +1,13 @@
-import Image from "next/image";
+import Navbar from "@/app/components/navbar/navbar";
+import Body from "@/app/components/body/body";
+import Footer from "@/app/components/footer/footer";
 
 export default function Home() {
   return (
     <div>
-      <p>Hola landing 2026</p>
+      <Navbar />
+      <Body />
+      <Footer />
     </div>
   );
 }
