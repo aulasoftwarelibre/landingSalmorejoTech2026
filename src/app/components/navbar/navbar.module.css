@@ -1,3 +1,5 @@
 .text {
   color: lightgreen;
+  text-align: center;
+  z-index: 10
 }

@@ -14,18 +14,9 @@
 
 
 
-html {
-  /* Propiedades del fondo */
-  background-color: #f0f0f0; /* Ejemplo de color de fondo */
-  background-image: url('/FondoLanding.png'); /* Ejemplo de imagen */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
-  ;
-}
-
-
 body {
-  background: transparent;
-  min-height: 100vh;
+
+  overflow-x: hidden; 
+  overflow-y: scroll; 
 }
+
