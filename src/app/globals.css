@@ -12,15 +12,20 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+
+html {
+  /* Propiedades del fondo */
+  background-color: #f0f0f0; /* Ejemplo de color de fondo */
+  background-image: url('/FondoLanding.png'); /* Ejemplo de imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+  ;
 }
 
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: transparent;
+  min-height: 100vh;
 }

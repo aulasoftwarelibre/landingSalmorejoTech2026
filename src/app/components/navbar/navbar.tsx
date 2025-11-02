@@ -3,7 +3,7 @@ import styles from "./navbar.module.css";
 
 export default function navbar() {
   return (
-    <div>
+    <div className="bg-transparent">
       <p className={styles.text}>This is the Navbar</p>
     </div>
   );
