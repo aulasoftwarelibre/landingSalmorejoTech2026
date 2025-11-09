@@ -1,5 +1,26 @@
 .text {
-  color: red;
+  color: white;
   text-align: center;
+  font-size: 48px;
+  font-family: var(--font-oswald);
+  opacity: 80%;
+}
 
+.main{
+  background: linear-gradient(#6666660D, 5%, #4D4D4DC7, 78%, #333333, #000000)
+}
+
+.footer{
+  justify-self: center;
+  width: 60%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.info{
+  justify-self: start;
+}
+
+.textContainer{
+  justify-self: end;
 }
