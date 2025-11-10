@@ -5,10 +5,11 @@
   font-family: var(--font-oswald);
   opacity: 80%;
   font-weight: 400;
+  padding: 10px;
 }
 
 .main{
-  background: linear-gradient(#6666660D, 5%, #4D4D4DC7, 78%, #333333, #000000)
+  background: linear-gradient(#6666660D, 5%, #4D4D4DC7, 78%, #333333, #000000);
 }
 
 .footer{
@@ -20,8 +21,19 @@
 
 .info{
   justify-self: start;
+  justify-items: center;
 }
 
 .textContainer{
+  align-self: center;
   justify-self: end;
+}
+
+.rrssContainer{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.image{
+  padding: 25px 10px;
 }
