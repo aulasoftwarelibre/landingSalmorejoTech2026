@@ -10,7 +10,7 @@ export default function footer() {
           <p className={styles.text}>Organiza:</p>
           <Image src={"/logoAula.png"} alt="logoAula" width={236} height={236} />   {/** ¡¡¡ta mal el logo!!! */}
           <div>
-            AQUI VAN LAS RRSS
+            
           </div>
         </div>
 
@@ -19,6 +19,7 @@ export default function footer() {
             ¡Encuéntranos!
             aulasoftwarelibre@uco.es
              Aulario Averroes
+             <br />
             (Campus de Rabanales)
           </p>
         </div>
