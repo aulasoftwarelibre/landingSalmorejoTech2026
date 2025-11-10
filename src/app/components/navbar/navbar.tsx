@@ -9,7 +9,6 @@ export default function navbar() {
     opacity: 0, // Empieza oculto
     left: "0px",
     width: "0px",
-    height: "0px",
   });
 
   function handleMouseEnter(e: any) { // esta funcion se dispara cuando pones el raton encima de el objeto
@@ -18,7 +17,6 @@ export default function navbar() {
       opacity: 1,
       left: `${li.offsetLeft}px`,
       width: `${li.offsetWidth}px`,
-      height: `${li.offsetHeight}px`,
     });
   }
 
