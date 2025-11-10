@@ -5,7 +5,7 @@ export default function body() {
   return (
     <div className={styles.fondo}>
       <p className={styles.text}>
-
+      hola mundo
 </p>
     </div>
   );
