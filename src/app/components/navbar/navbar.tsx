@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { useState } from "react";
+import { Righteous } from "next/font/google";
+import { px } from "framer-motion";
 
 export default function navbar() {
   const [sliderStyle, setSliderStyle] = useState({
@@ -32,7 +34,7 @@ export default function navbar() {
           href="https://www.google.com/"
           className={styles.link}
         >
-          Inicio
+        Inicio
         </Link>
         </li>
 
