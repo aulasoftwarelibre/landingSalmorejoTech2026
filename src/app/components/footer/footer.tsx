@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./footer.module.css";
-import { div } from "framer-motion/m";
 
 interface RRSS{
   id: number;
@@ -66,7 +65,7 @@ export default function footer() {
             {socials.map((social) => (
               <div key={social.id}>
                 <a href={social.url}>
-                  <Image src={social.image} alt={social.alt} width={50} height={50} className={styles.image}/>
+                  <Image src={social.image} alt={social.alt} width={50} height={50} className={`${styles.image} ${styles.aslLink}`}/>
                 </a>
               </div>
             ))}
@@ -76,14 +75,19 @@ export default function footer() {
         <div className={styles.textContainer}>
           <p className={styles.text}>
             ¡Encuéntranos!
-            aulasoftwarelibre@uco.es
+            <a href="https://www.uco.es/aulasoftwarelibre/bienvenidos-al-aula/" className={styles.aslLink}>
+              Aulasoftwarelibre@uco.es
+            </a>
              Aulario Averroes
              <br />
             (Campus de Rabanales)
           </p>
         </div>
 
-      </div>      
+      </div>
+      <div className={styles.merch}>
+        <p className={styles.merchText}>© 2025 Aula Software Libre</p>
+      </div> 
     </div>
   );
 }
