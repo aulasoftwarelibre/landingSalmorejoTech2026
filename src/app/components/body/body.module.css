@@ -1,10 +1,11 @@
 .text {
   color: white;
 
-  width: 1508;
-  height: 83;
+  width: 1508px;
+  height: 83px;
   top: 612.63px;
-  left: 110px;
+  left: -200px;
+  
   opacity: 1;
 
   font-family:'Oswald', sans-serif;
@@ -15,16 +16,18 @@
   letter-spacing: 0%;
   text-align: center;
 
-  transform: translate(0,350);
+  transform: translate(-20,350);
+  
+}
 
-  .miboton{
+.miboton{
   position: absolute;      
   display: flex;             
   justify-content: center;   
   align-items: center;
 
-  top: 731px;            
-  left: 650px;
+  top: 500px;            
+  left: 515px;
 
   width: 425px;           
   height: 123px;
@@ -43,10 +46,10 @@
 
 .imagenConFiltro {
   position: absolute;      
-  top: 200em;              
-  left: 110em;             
-  width: 1508em;           
-  height: 200em; 
+  top: 145px;              
+  left: 100px;             
+  width: 1250px;           
+  height: 200px; 
 
   backdrop-filter: blur(50px); 
   -webkit-backdrop-filter: blur(50px); 
@@ -57,7 +60,8 @@
   opacity: 1; 
   
 }
-}
+
+
 
 
 
