@@ -10,6 +10,7 @@
 
 .main{
   background: linear-gradient(rgba(102, 102, 102, 0), rgba(77, 77, 77, 0.527), rgba(51, 51, 51, 0.473), rgba(0, 0, 0, 0.479));
+  display: grid;
 }
 
 .footer{
@@ -41,6 +42,7 @@
 .info{
   justify-self: start;
   justify-items: center;
+  display: grid;
 }
 
 .textContainer{

@@ -57,7 +57,7 @@ export default function footer() {
   return (
     <div className={styles.main}>
       <div className={styles.footer}>
-
+        
         <div className={styles.info}>
           <p className={styles.text}>Organiza:</p>
           <Image src={"/logoAula.png"} alt="logoAula" width={236} height={236} />
