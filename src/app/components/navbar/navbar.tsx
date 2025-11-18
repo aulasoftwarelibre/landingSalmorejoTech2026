@@ -1,74 +1,95 @@
 "use client";
-import Image from "next/image";
 import styles from "./navbar.module.css";
 import Link from "next/link";
-import { useState } from "react";
-import { Righteous } from "next/font/google";
-import { px } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 
-export default function navbar() {
+export default function Navbar() {
   const [sliderStyle, setSliderStyle] = useState({
-    opacity: 0, // Empieza oculto
+    opacity: 0,
     left: "0px",
     width: "0px",
   });
 
-  function handleMouseEnter(e: any) { // esta funcion se dispara cuando pones el raton encima de el objeto
-    const li = e.currentTarget; // El <li> sobre el que estás
-    setSliderStyle({
-      opacity: 1,
-      left: `${li.offsetLeft}px`,
-      width: `${li.offsetWidth}px`,
-    });
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const navListRef = useRef<HTMLUListElement>(null);
+
+  // Cerrar menú móvil al hacer clic fuera
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (navListRef.current && !navListRef.current.contains(event.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    }
+
+    if (isMobileMenuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isMobileMenuOpen]);
+
+  function handleMouseEnter(e: React.MouseEvent<HTMLLIElement>) {
+    if (window.innerWidth > 768) {
+      const li = e.currentTarget;
+      setSliderStyle({
+        opacity: 1,
+        left: `${li.offsetLeft}px`,
+        width: `${li.offsetWidth}px`,
+      });
+    }
   }
 
-  function handleMouseLeave() { // esta se dispara cuando quitas el ratón.
-    setSliderStyle({ ...sliderStyle, opacity: 0 });
+  function handleMouseLeave() {
+    if (window.innerWidth > 768) setSliderStyle(prev => ({ ...prev, opacity: 0 }));
   }
 
   return (
     <nav className={styles.navbar}>
-      <ul className={styles.navList} onMouseLeave={handleMouseLeave}>
-
-        <li onMouseEnter={handleMouseEnter}><Link
-          href="https://www.google.com/"
-          className={styles.link}
+      
+      {!isMobileMenuOpen && (
+        <button
+          className={styles.hamburger}
+          onClick={() => setIsMobileMenuOpen(true)}
+          aria-label="Abrir menú"
         >
-        Inicio
-        </Link>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      )}
+      <ul
+        ref={navListRef}
+        className={`${styles.navList} ${isMobileMenuOpen ? styles.navListActive : ""}`}
+        onMouseLeave={handleMouseLeave}
+      >
+        {isMobileMenuOpen && (
+          <button
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={styles.closeButton}
+            aria-label="Cerrar menú"
+          >
+            &times;
+          </button>
+        )}
+
+        <li onMouseEnter={handleMouseEnter} onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/" className={styles.link}>Inicio</Link>
         </li>
 
-        <li onMouseEnter={handleMouseEnter}>
-          <Link
-            href="https://www.google.com/"
-            className={styles.link}
-          >
-            Otras Ediciones
-          </Link>
+        <li onMouseEnter={handleMouseEnter} onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/otras-ediciones" className={styles.link}>Otras Ediciones</Link>
         </li>
 
-        <li onMouseEnter={handleMouseEnter}>
-          <Link
-            href="https://www.google.com/"
-            className={styles.link}
-          >
-            Sobre Nosotros
-          </Link>
+        <li onMouseEnter={handleMouseEnter} onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/sobre-nosotros" className={styles.link}>Sobre Nosotros</Link>
         </li>
 
-        <li onMouseEnter={handleMouseEnter}>
-          <Link
-            href="https://www.google.com/"
-            className={styles.link}
-          >
-            Contacto
-          </Link>
+        <li onMouseEnter={handleMouseEnter} onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/contacto" className={styles.link}>Contacto</Link>
         </li>
       </ul>
-      <div 
-        className={styles.slider} 
-        style={sliderStyle} 
-      />
+
+      <div className={styles.slider} style={sliderStyle} />
     </nav>
   );
 }
