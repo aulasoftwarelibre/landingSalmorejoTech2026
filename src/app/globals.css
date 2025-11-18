@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Oswald:wght@200..700&display=swap');
 @import "tailwindcss";
+
+
+@layer theme {
+  @theme {
+    --font-oswald: "Oswald";
+  }
+}
 
 :root {
   --background: #ffffff;

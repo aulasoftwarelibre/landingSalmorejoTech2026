@@ -1,5 +1,111 @@
 .text {
-  color: red;
+  color: white;
   text-align: center;
+  font-size: 3em;
+  font-family: var(--font-oswald);
+  opacity: 80%;
+  font-weight: 400;
+  padding: 0.6em;
+}
 
+.main{
+  background: linear-gradient(rgba(102, 102, 102, 0), rgba(77, 77, 77, 0.527), rgba(51, 51, 51, 0.473), rgba(0, 0, 0, 0.479));
+  display: grid;
+}
+
+.footer{
+  justify-self: center;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding-bottom: 6em;
+  padding-top: 6em;
+}
+
+@media (max-width: 1440px){
+  @media (min-width: 1000px){
+    .info{
+      width: 20em;
+      justify-self: start;
+    }
+
+    .textContainer{
+      width: 20em;
+    }
+
+    .text{
+      font-size: 2em;
+    }
+  }
+}
+
+.info{
+  justify-self: start;
+  justify-items: center;
+  display: grid;
+}
+
+.textContainer{
+  align-self: center;
+  justify-self: end;
+}
+
+@media (max-width: 1000px){
+  .footer{
+    column-gap: 15%;
+    width: 80%;
+  }
+
+  .text{
+    font-size: 1.5em;
+  }
+
+  .info{
+    justify-self: center  ;
+  }
+
+  .textContainer{
+    max-width: 30em;
+    justify-self: center;
+  }
+}
+
+.rrssContainer{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.image{
+  padding: 1.5em 0.6em;
+}
+
+@media (max-width: 500px){
+  .image{
+    padding: 1em 0.4em
+  }
+}
+
+.merch{
+  position: fixed;
+  justify-self: center;
+  bottom: 0;
+}
+
+.merchText{
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: var(--font-oswald);
+  opacity: 80%;
+  font-weight: 400;
+  padding: 0.5em;
+}
+
+.aslLink{
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.aslLink:hover {
+  transform: scale(1.2);
 }
