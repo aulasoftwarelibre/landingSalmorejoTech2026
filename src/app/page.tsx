@@ -29,8 +29,8 @@ export default function Home() {
       style={{ position: 'relative', zIndex: 10 }}>
         <Navbar />
         <Body />
-        <Footer />
       </motion.div>
+        <Footer />
     </div>
   );
 }

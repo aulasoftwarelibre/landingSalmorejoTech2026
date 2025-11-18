@@ -3,7 +3,7 @@ import { motion, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 import styles from "./background.module.css";
 
-export default function BackgroundSticky() {
+export default function Background() {
   const { scrollY } = useScroll();
   const [scroll, setScroll] = useState(0);
 
