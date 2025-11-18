@@ -9,23 +9,23 @@ const IMAGE_HEIGHT = 241;
 export default function body() {
 
   return (
-    <div className="container">
+    <div className={styles.container}>
           <div className={styles.fondo}>
-      <button className={styles.miboton}>
-        CALL4PAPER
-      </button>
-      <div className={styles.imagenConFiltro}>
-        <Image 
-          src="/d37f886165abba69b34b989cc286df9138bc451b.png" 
-          alt="Imagen con filtro de desenfoque" 
-          width={IMAGE_WIDTH} 
+      <div className={styles.image}>
+        <Image
+          src="/d37f886165abba69b34b989cc286df9138bc451b.png"
+          alt="Imagen con filtro de desenfoque"
+          width={IMAGE_WIDTH}
           height={IMAGE_HEIGHT}
-          priority 
+          priority
         />
       </div>
       <p className={styles.text}>
-      LA CITA DE LA TECNOLOGÍA CÓRDOBESA REGRESA CON UNA ENERGÍA IMPARABLE
-</p>
+        LA CITA DE LA TECNOLOGÍA CÓRDOBESA REGRESA CON UNA ENERGÍA IMPARABLE
+      </p>
+      <button className={styles.miboton}>
+        CALL4PAPER
+      </button>
     </div>
     </div>
   );
