@@ -1,20 +1,19 @@
 "use client"
-import { motion, useScroll } from "framer-motion";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useEffect, useState } from "react";
 import styles from "./background.module.css";
 
 export default function Background() {
-  const { scrollY } = useScroll();
+  const { scrollYProgress } = useScroll();
   const [scroll, setScroll] = useState(0);
 
-  useEffect(() => {
-    const unsubscribe = scrollY.on("change", (latest) => {
-      setScroll(latest);
-    });
-    return () => unsubscribe();
-  }, [scrollY]);
+  useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    setScroll(latest);
+  });
 
-  if (scroll < 400) {
+
+
+  if (scroll < 0.2) {
     return (
       <motion.div
         className={styles.fondo}
