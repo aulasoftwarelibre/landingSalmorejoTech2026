@@ -33,14 +33,14 @@
   height: 123px;
 
   border-radius: 50px;     
-  border: 1px solid #000;
+  border: 1px solid #ffffff;
 
   padding: 10px;
 
   cursor: pointer;           
-  background-color: #0070f3;  /*CAMBIAR!!!*/
+  background-color: transparent;  /*CAMBIAR!!!*/
   color: white;              
-  font-size: 24px;
+  font-size: 64px;
 
 }
 
