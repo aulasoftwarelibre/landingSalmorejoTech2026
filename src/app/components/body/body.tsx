@@ -9,9 +9,8 @@ const IMAGE_HEIGHT = 241;
 export default function body() {
 
   return (
-    
-
-    <div className={styles.fondo}>
+    <div className="container">
+          <div className={styles.fondo}>
       <button className={styles.miboton}>
         CALL4PAPER
       </button>
@@ -27,6 +26,7 @@ export default function body() {
       <p className={styles.text}>
       LA CITA DE LA TECNOLOGÍA CÓRDOBESA REGRESA CON UNA ENERGÍA IMPARABLE
 </p>
+    </div>
     </div>
   );
 }
