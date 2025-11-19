@@ -1,7 +1,6 @@
 .text {
   color: red;
   text-align: center;
-
 }
 
 .fondo {
@@ -11,11 +10,7 @@
   height: 100vh;
   z-index: -1;
   pointer-events: none;
-  background-image: url('/FondoLanding.png');
+  background-image: url("/FondoLandingDarker.png");
   background-size: cover;
   background-position: center;
-  
 }
-
-
-

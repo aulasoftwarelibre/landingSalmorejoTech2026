@@ -1,19 +1,17 @@
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-self: center;
   width: 100%;
-
 }
-
 
 .text {
   color: white;
   max-width: 100%;
   height: auto;
-  font-family:'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: clamp(1.5rem, 2vw, 2rem);
   line-height: 100%;
   letter-spacing: 4px;
@@ -25,7 +23,7 @@
   margin-right: 75px;
 }
 
-.miboton{
+.miboton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,29 +37,26 @@
   font-size: 1.8rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
   padding: 10px 0;
 
-
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(30px) saturate(120%);
   -webkit-backdrop-filter: blur(30px) saturate(120%);
-  border: 2px solid rgba(255,255,255,0.08);
+  border: 2px solid rgba(255, 255, 255, 0.08);
   border-radius: 50em; /* Forma de píldora inicial */
   box-shadow:
-  0 8px 32px 0 rgba(0, 0, 0, 0.08),
-  inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
-  inset 0 -1px 0 0 rgba(0, 0, 0, 0.01);
-  font-family: 'Oswald', sans-serif;
+    0 8px 32px 0 rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08),
+    inset 0 -1px 0 0 rgba(0, 0, 0, 0.01);
+  font-family: "Oswald", sans-serif;
 
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Tu transición suave original */
 
   font-size: clamp(1.2rem, 3vw, 2.5rem);
 
-
   margin-bottom: 1vh;
 }
 
-
 .miboton:hover {
-  background: rgba(255, 255, 255, 0.3); 
+  background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-3px);
   box-shadow:
@@ -69,18 +64,13 @@
     inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 }
 
-
-
-
 .image {
   width: 90%;
   max-width: 900px;
   height: auto;
   margin: 20px auto;
-  margin-top: 5%;
+  margin-top: 12%;
 }
-
-
 
 @media (max-width: 1000px) {
   .text {
@@ -89,32 +79,30 @@
     margin-right: 50px;
   }
 
-  .miboton{
+  .miboton {
     width: 40%;
     max-width: none; /* Quitamos el límite para que ocupe el 80% real */
     font-size: 1.8rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
     padding: 15px 0;
   }
 
-    .container{
-  margin-top: 5%;
+  .container {
+    margin-top: 5%;
   }
 }
 
-
 @media (max-width: 600px) {
-  .miboton{
+  .miboton {
     width: 50%;
     max-width: none; /* Quitamos el límite para que ocupe el 80% real */
     font-size: 1.8rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
     padding: 10px 0;
   }
 
-    .container{
-  margin-top: 10%;
+  .container {
+    margin-top: 10%;
   }
 }
-
 
 @media (max-width: 500px) {
   .text {
@@ -141,16 +129,16 @@
     font-size: clamp(1rem, 2vw, 8rem);
     margin-left: 50px;
     margin-right: 50px;
-
   }
-  .miboton{
+  .miboton {
     width: 60%;
     max-width: none; /* Quitamos el límite para que ocupe el 80% real */
     font-size: 1.8rem; /* O puedes usar clamp(1.5rem, 5vw, 2.5rem) */
     padding: 10px 0;
   }
 
-  .container{
+  .container {
     margin-top: 10%;
   }
 }
+
