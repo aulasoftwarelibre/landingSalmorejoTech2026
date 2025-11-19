@@ -16,7 +16,10 @@ export default function Navbar() {
   // Cerrar menú móvil al hacer clic fuera
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (navListRef.current && !navListRef.current.contains(event.target as Node)) {
+      if (
+        navListRef.current &&
+        !navListRef.current.contains(event.target as Node)
+      ) {
         setIsMobileMenuOpen(false);
       }
     }
@@ -40,12 +43,12 @@ export default function Navbar() {
   }
 
   function handleMouseLeave() {
-    if (window.innerWidth > 768) setSliderStyle(prev => ({ ...prev, opacity: 0 }));
+    if (window.innerWidth > 768)
+      setSliderStyle((prev) => ({ ...prev, opacity: 0 }));
   }
 
   return (
     <nav className={styles.navbar}>
-      
       {!isMobileMenuOpen && (
         <button
           className={styles.hamburger}
@@ -59,7 +62,9 @@ export default function Navbar() {
       )}
       <ul
         ref={navListRef}
-        className={`${styles.navList} ${isMobileMenuOpen ? styles.navListActive : ""}`}
+        className={`${styles.navList} ${
+          isMobileMenuOpen ? styles.navListActive : ""
+        }`}
         onMouseLeave={handleMouseLeave}
       >
         {isMobileMenuOpen && (
@@ -72,20 +77,40 @@ export default function Navbar() {
           </button>
         )}
 
-        <li onMouseEnter={handleMouseEnter} onClick={() => setIsMobileMenuOpen(false)}>
-          <Link href="/" className={styles.link}>Inicio</Link>
+        <li
+          onMouseEnter={handleMouseEnter}
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          <Link href="/" className={styles.link}>
+            Inicio
+          </Link>
         </li>
 
-        <li onMouseEnter={handleMouseEnter} onClick={() => setIsMobileMenuOpen(false)}>
-          <Link href="/otras-ediciones" className={styles.link}>Otras Ediciones</Link>
+        <li
+          onMouseEnter={handleMouseEnter}
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          <Link href="/past" className={styles.link}>
+            Otras Ediciones
+          </Link>
         </li>
 
-        <li onMouseEnter={handleMouseEnter} onClick={() => setIsMobileMenuOpen(false)}>
-          <Link href="/sobre-nosotros" className={styles.link}>Sobre Nosotros</Link>
+        <li
+          onMouseEnter={handleMouseEnter}
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          <Link href="/aboutUs" className={styles.link}>
+            Sobre Nosotros
+          </Link>
         </li>
 
-        <li onMouseEnter={handleMouseEnter} onClick={() => setIsMobileMenuOpen(false)}>
-          <Link href="/contacto" className={styles.link}>Contacto</Link>
+        <li
+          onMouseEnter={handleMouseEnter}
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          <Link href="/contact" className={styles.link}>
+            Contacto
+          </Link>
         </li>
       </ul>
 
