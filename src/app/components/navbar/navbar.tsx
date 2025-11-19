@@ -67,6 +67,9 @@ export default function Navbar() {
         }`}
         onMouseLeave={handleMouseLeave}
       >
+        {/* MOVIDO: El slider ahora está DENTRO de la lista para corregir el posicionamiento */}
+        <div className={styles.slider} style={sliderStyle} />
+
         {isMobileMenuOpen && (
           <button
             onClick={() => setIsMobileMenuOpen(false)}
@@ -113,8 +116,6 @@ export default function Navbar() {
           </Link>
         </li>
       </ul>
-
-      <div className={styles.slider} style={sliderStyle} />
     </nav>
   );
 }
