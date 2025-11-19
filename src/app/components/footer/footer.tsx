@@ -53,9 +53,13 @@ const socials: RRSS[] = [
   },
 ];
 
-export default function footer() {
+interface FooterProps {
+  isVisible: boolean;
+}
+
+export default function Footer({ isVisible }: FooterProps) {
   return (
-    <div className={styles.main}>
+    <div className={`${styles.main} ${isVisible ? styles.visible : ""}`}>
       <div className={styles.footer}>
         <div className={styles.info}>
           <p className={styles.text}>Organiza:</p>
