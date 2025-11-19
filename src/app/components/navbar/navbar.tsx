@@ -90,7 +90,7 @@ export default function Navbar() {
           onMouseEnter={handleMouseEnter}
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <Link href="/past" className={styles.link}>
+          <Link href="https://salmorejo.tech/2025" className={styles.link}>
             Otras Ediciones
           </Link>
         </li>
@@ -108,7 +108,7 @@ export default function Navbar() {
           onMouseEnter={handleMouseEnter}
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <Link href="/contact" className={styles.link}>
+          <Link href="https://www.uco.es/aulasoftwarelibre/contacto/" className={styles.link}>
             Contacto
           </Link>
         </li>
