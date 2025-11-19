@@ -32,7 +32,7 @@ export default function Navbar() {
   }, [isMobileMenuOpen]);
 
   function handleMouseEnter(e: React.MouseEvent<HTMLLIElement>) {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth > 650) {
       const li = e.currentTarget;
       setSliderStyle({
         opacity: 1,
@@ -111,7 +111,10 @@ export default function Navbar() {
           onMouseEnter={handleMouseEnter}
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <Link href="https://www.uco.es/aulasoftwarelibre/contacto/" className={styles.link}>
+          <Link
+            href="https://www.uco.es/aulasoftwarelibre/contacto/"
+            className={styles.link}
+          >
             Contacto
           </Link>
         </li>
@@ -119,3 +122,4 @@ export default function Navbar() {
     </nav>
   );
 }
+
