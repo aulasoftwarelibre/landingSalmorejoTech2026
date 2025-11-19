@@ -106,9 +106,9 @@
 }
 
 .merch {
-  position: fixed;
   justify-self: center;
-  bottom: 0;
+  padding-bottom: 1em; /* Un pequeño margen al final de la página */
+  margin-top: 1em;
 }
 
 .merchText {
