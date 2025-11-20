@@ -13,8 +13,26 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Landing SalmorejoTech 2026",
-  description: "Pagina web inicial del evento tecnológico SalmorejoTech",
+metadataBase: new URL("https://salmorejo.tech"),
+title: "Web Salmorejo Tech 2026",
+  description: "Explora la tecnología de Salmorejo Tech para el 2026. El evento tecnologico cordobes donde todos aprenden.",
+  // --- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) ---
+  openGraph: {
+    title: "Web Salmorejo Tech 2026",
+    description: "Explora la tecnología de Salmorejo Tech para el 2026. El evento tecnologico cordobes donde todos aprenden.",
+    url: "/2026",
+    siteName: "SalmorejoTech",
+    locale: "es_ES",
+    type: "website",
+  },
+
+  // --- Twitter Card ---
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Salmorejo Tech 2026",
+    description: "Explora la tecnología de Salmorejo Tech para el 2026. El evento tecnologico cordobes donde todos aprenden.",
+    site: "@AulaSL",
+  },
 };
 
 export default function RootLayout({
