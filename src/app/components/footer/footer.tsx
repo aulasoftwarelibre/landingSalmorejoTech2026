@@ -1,9 +1,18 @@
 import Image from "next/image";
 import styles from "./footer.module.css";
+import facebookImg from "../../assets/facebookLogo.png"; 
+import instaImg from "../../assets/instaLogo.png";
+import telegramImg from "../../assets/telegramLogo.png";
+import linkedinImg from "../../assets/linkedinLogo.png";
+import twitterImg from "../../assets/twitterLogo.png";
+import youtubeImg from "../../assets/youtubeLogo.png";
+import githubImg from "../../assets/githubLogo.png";
+import logoAula from "../../assets/logoAula.png";
+
 
 interface RRSS {
   id: number;
-  image: string;
+  image: any;
   alt: string;
   url: string;
 }
@@ -11,43 +20,43 @@ interface RRSS {
 const socials: RRSS[] = [
   {
     id: 1,
-    image: "/facebookLogo.png",
+    image: facebookImg,
     alt: "facebook logo",
     url: "https://www.facebook.com/AulaSoftwareLibre/",
   },
   {
     id: 2,
-    image: "/instaLogo.png",
+    image: instaImg,
     alt: "instagram logo",
     url: "https://www.instagram.com/aulasoftwarelibre/?hl=es",
   },
   {
     id: 3,
-    image: "/telegramLogo.png",
+    image: telegramImg,
     alt: "telegram logo",
     url: "https://t.me/AulaSoftwareLibreUCO",
   },
   {
     id: 4,
-    image: "/linkedinLogo.png",
+    image: linkedinImg,
     alt: "linkedin logo",
     url: "https://www.linkedin.com/company/aulasoftwarelibre/posts/?feedView=all",
   },
   {
     id: 5,
-    image: "/twitterLogo.png",
+    image: twitterImg,
     alt: "twitter logo",
     url: "https://x.com/aulasl",
   },
   {
     id: 6,
-    image: "/githubLogo.png",
+    image: githubImg,
     alt: "github logo",
     url: "https://github.com/aulasoftwarelibre",
   },
   {
     id: 7,
-    image: "/youtubeLogo.png",
+    image: youtubeImg,
     alt: "youtube logo",
     url: "https://www.youtube.com/c/AulaSoftwareLibre",
   },
@@ -64,7 +73,7 @@ export default function Footer({ isVisible }: FooterProps) {
         <div className={styles.info}>
           <p className={styles.text}>Organiza:</p>
           <Image
-            src={"/logoAula.png"}
+            src={logoAula}
             alt="logoAula"
             width={236}
             height={236}

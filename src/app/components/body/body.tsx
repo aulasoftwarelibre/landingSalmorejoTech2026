@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./body.module.css";
+import logoSalmorejo from "../../assets/logoSalmorejo.png";
 
 const IMAGE_WIDTH = 1508;
 const IMAGE_HEIGHT = 241;
@@ -10,8 +11,8 @@ export default function body() {
       <div className={styles.fondo}>
         <div className={styles.image}>
           <Image
-            src="/logoSalmorejo.png"
-            alt="Logo SalmorejoTech"
+            src={logoSalmorejo}
+            alt="Logo"
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             priority
