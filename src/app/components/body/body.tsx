@@ -10,8 +10,8 @@ export default function body() {
       <div className={styles.fondo}>
         <div className={styles.image}>
           <Image
-            src="/d37f886165abba69b34b989cc286df9138bc451b.png"
-            alt="Imagen con filtro de desenfoque"
+            src="/salmorejoLogo.png"
+            alt="Logo SalmorejoTech"
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             priority
