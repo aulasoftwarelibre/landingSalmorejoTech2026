@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
-  basePath: "",
+  basePath: "/2026landing",
   output: "export",
   trailingSlash: true,
   images: {
