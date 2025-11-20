@@ -10,7 +10,7 @@ export default function body() {
       <div className={styles.fondo}>
         <div className={styles.image}>
           <Image
-            src="../../assets/salmorejoLogo.png"
+            src="/salmorejoLogo.png"
             alt="Logo SalmorejoTech"
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
