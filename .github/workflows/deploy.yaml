@@ -9,7 +9,7 @@ on:
 env:
   DOCKER_BUILDKIT: 1
 
-  IMAGE_NAME: ghcr.io/aulasoftwarelibre/landingSalmorejoTech2026
+  IMAGE_NAME: ghcr.io/aulasoftwarelibre/landingsalmorejotech2026
 
 jobs:
   build-and-push:
