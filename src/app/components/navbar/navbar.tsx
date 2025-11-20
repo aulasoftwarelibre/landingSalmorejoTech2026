@@ -84,7 +84,7 @@ export default function Navbar() {
           onMouseEnter={handleMouseEnter}
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <Link href="/" className={styles.link}>
+          <Link href="/2026" className={styles.link}>
             Inicio
           </Link>
         </li>
@@ -102,7 +102,7 @@ export default function Navbar() {
           onMouseEnter={handleMouseEnter}
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          <Link href="/aboutUs" className={styles.link}>
+          <Link href="/2026/aboutUs" className={styles.link}>
             Sobre Nosotros
           </Link>
         </li>
@@ -122,4 +122,3 @@ export default function Navbar() {
     </nav>
   );
 }
-

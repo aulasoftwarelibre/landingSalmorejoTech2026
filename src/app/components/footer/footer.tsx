@@ -11,43 +11,43 @@ interface RRSS {
 const socials: RRSS[] = [
   {
     id: 1,
-    image: "/facebookLogo.png",
+    image: "/2026/facebookLogo.png",
     alt: "facebook logo",
     url: "https://www.facebook.com/AulaSoftwareLibre/",
   },
   {
     id: 2,
-    image: "/instaLogo.png",
+    image: "/2026/instaLogo.png",
     alt: "instagram logo",
     url: "https://www.instagram.com/aulasoftwarelibre/?hl=es",
   },
   {
     id: 3,
-    image: "/telegramLogo.png",
+    image: "/2026/telegramLogo.png",
     alt: "telegram logo",
     url: "https://t.me/AulaSoftwareLibreUCO",
   },
   {
     id: 4,
-    image: "/linkedinLogo.png",
+    image: "/2026/linkedinLogo.png",
     alt: "linkedin logo",
     url: "https://www.linkedin.com/company/aulasoftwarelibre/posts/?feedView=all",
   },
   {
     id: 5,
-    image: "/twitterLogo.png",
+    image: "/2026/twitterLogo.png",
     alt: "twitter logo",
     url: "https://x.com/aulasl",
   },
   {
     id: 6,
-    image: "/githubLogo.png",
+    image: "/2026/githubLogo.png",
     alt: "github logo",
     url: "https://github.com/aulasoftwarelibre",
   },
   {
     id: 7,
-    image: "/youtubeLogo.png",
+    image: "/2026/youtubeLogo.png",
     alt: "youtube logo",
     url: "https://www.youtube.com/c/AulaSoftwareLibre",
   },
@@ -64,7 +64,7 @@ export default function Footer({ isVisible }: FooterProps) {
         <div className={styles.info}>
           <p className={styles.text}>Organiza:</p>
           <Image
-            src={"/logoAula.png"}
+            src={"/2026/logoAula.png"}
             alt="logoAula"
             width={236}
             height={236}

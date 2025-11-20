@@ -10,7 +10,7 @@ export default function body() {
       <div className={styles.fondo}>
         <div className={styles.image}>
           <Image
-            src="/d37f886165abba69b34b989cc286df9138bc451b.png"
+            src="/2026/d37f886165abba69b34b989cc286df9138bc451b.png"
             alt="Imagen con filtro de desenfoque"
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
