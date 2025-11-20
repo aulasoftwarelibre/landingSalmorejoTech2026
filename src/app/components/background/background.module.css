@@ -10,7 +10,7 @@
   height: 100vh;
   z-index: -1;
   pointer-events: none;
-  background-image: url("/2026/FondoLandingDarker.png");
+  background-image: url("/2026/FondoLandingDarker.svg");
   background-size: cover;
   background-position: center;
 }
