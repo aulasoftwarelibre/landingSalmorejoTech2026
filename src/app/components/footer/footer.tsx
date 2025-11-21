@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./footer.module.css";
-import facebookImg from "../../assets/facebookLogo.png"; 
+import facebookImg from "../../assets/facebookLogo.png";
 import instaImg from "../../assets/instaLogo.png";
 import telegramImg from "../../assets/telegramLogo.png";
 import linkedinImg from "../../assets/linkedinLogo.png";
@@ -8,7 +8,6 @@ import twitterImg from "../../assets/twitterLogo.png";
 import youtubeImg from "../../assets/youtubeLogo.png";
 import githubImg from "../../assets/githubLogo.png";
 import logoAula from "../../assets/logoAula.png";
-
 
 interface RRSS {
   id: number;
@@ -72,12 +71,7 @@ export default function Footer({ isVisible }: FooterProps) {
       <div className={styles.footer}>
         <div className={styles.info}>
           <p className={styles.text}>Organiza:</p>
-          <Image
-            src={logoAula}
-            alt="logoAula"
-            width={236}
-            height={236}
-          />
+          <Image src={logoAula} alt="logoAula" width={236} height={236} />
           <div className={styles.rrssContainer}>
             {socials.map((social) => (
               <div key={social.id}>
@@ -103,7 +97,7 @@ export default function Footer({ isVisible }: FooterProps) {
               href="https://www.uco.es/aulasoftwarelibre/bienvenidos-al-aula/"
               className={styles.aslLink}
             >
-              Aulasoftwarelibre@uco.es
+              aulasoftwarelibre@uco.es
             </a>
             <br></br>
             Aulario Averroes
@@ -113,7 +107,7 @@ export default function Footer({ isVisible }: FooterProps) {
         </div>
       </div>
       <div className={styles.merch}>
-        <p className={styles.merchText}>© 2025 Aula Software Libre</p>
+        <p className={styles.merchText}>🄯 2025 Aula Software Libre</p>
       </div>
     </div>
   );
