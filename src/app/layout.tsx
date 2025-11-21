@@ -84,6 +84,10 @@ export const metadata: Metadata = {
     creator: "@AulaSL",
     images: ["/opengraph-image.jpg"],
   },
+
+  verification: {
+    google: "TSaySf4j8921ib-uPMjMx7LCvL9ykC1a-P29LPVqfMs",
+  },
 };
 
 export default function RootLayout({
@@ -112,7 +116,7 @@ export default function RootLayout({
                 "https://www.facebook.com/AulaSoftwareLibre/",
               ],
               description:
-                "Delegación de estudiantes de la Universidad de Córdoba dedicada a la difusión del conocimiento libre y organizadora del Salmorejo Tech.",
+                "Unión de estudiantes de la Universidad de Córdoba dedicada a la difusión del conocimiento libre y organizadora del Salmorejo Tech.",
             }),
           }}
         />
