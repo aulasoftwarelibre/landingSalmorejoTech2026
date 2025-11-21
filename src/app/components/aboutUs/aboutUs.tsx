@@ -4,7 +4,7 @@ export default function body() {
   return (
     <div className={styles.container}>
       <h1>
-        <p className={styles.textAbout}>About Us</p>
+        <p className={styles.textAbout}>Sobre Nosotros</p>
       </h1>
       <p className={styles.text}>
         El Aula de Software Libre fue creada en 2006 con la unión de un grupo de
@@ -23,7 +23,7 @@ export default function body() {
         </li>
         <li>
           - Incentivar el interés en la programación en la comunidad a través de
-          proyectos y colaborativos.
+          proyectos y colaboraciones.
         </li>
         <li>
           - Fomentar que los trabajos fin de grado se publiquen con licencia
@@ -31,15 +31,15 @@ export default function body() {
         </li>
         <li>
           - Velar por el uso de software libre y estándares abiertos en el
-          ámbito de la Universidad.
+          ámbito de la universidad.
         </li>
       </ul>
       <p className={styles.text}>
         El SalmorejoTech es el mayor evento tecnológico de Córdoba, con 7 años
-        de organizción a nuestras espaldas.<br></br>
-        <br></br>Contando con los ponentes de primer nivel en las empresas más
-        punteras y con los que nos dedicamos a hablar de software, empresas,
-        tecnología...<br></br>
+        de organización a nuestras espaldas.<br></br>
+        <br></br>Contamos con los ponentes de primer nivel de las empresas más
+        punteras y con los que hablamos de software, empresas, tecnología...
+        <br></br>
         <br></br>Finalizando con nuestro famoso:
         <br></br>Networking = Food + New Friends
       </p>
