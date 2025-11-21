@@ -40,7 +40,7 @@ export default function body() {
         <br></br>Contamos con los ponentes de primer nivel de las empresas más
         punteras y con los que hablamos de software, empresas, tecnología...
         <br></br>
-        <br></br>Finalizando con nuestro famoso:
+        <br></br>Finalizando el dia con nuestro famoso:
         <br></br>Networking = Food + New Friends
       </p>
     </div>
