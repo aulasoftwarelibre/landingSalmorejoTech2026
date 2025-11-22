@@ -55,8 +55,8 @@ export const metadata: Metadata = {
     canonical: "/2026",
   },
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: "/2026/icon.png",
+    apple: "/2026/icon.png",
   },
 
   // --- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) ---

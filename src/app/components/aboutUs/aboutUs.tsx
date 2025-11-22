@@ -3,9 +3,7 @@ import styles from "./aboutUs.module.css";
 export default function body() {
   return (
     <div className={styles.container}>
-      <h1>
-        <p className={styles.textAbout}>Sobre Nosotros</p>
-      </h1>
+      <h1 className={styles.textAbout}>Sobre Nosotros</h1>
       <p className={styles.text}>
         El Aula de Software Libre fue creada en 2006 con la unión de un grupo de
         estudiantes que tenían intereses parecidos.<br></br>

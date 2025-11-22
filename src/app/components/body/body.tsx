@@ -21,15 +21,14 @@ export default function body() {
         <h1 className={styles.text}>
           LA CITA DE LA TECNOLOGÍA CÓRDOBESA REGRESA CON UNA ENERGÍA IMPARABLE
         </h1>
-        <button
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdNOP1mYrdZi2WQhaiZ-nMbRqYowmwW1T4RYTBlrnShJ-ukxA/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
           className={styles.miboton}
-          onClick={() =>
-            (window.location.href =
-              "https://docs.google.com/forms/d/e/1FAIpQLSdNOP1mYrdZi2WQhaiZ-nMbRqYowmwW1T4RYTBlrnShJ-ukxA/viewform?usp=dialog")
-          }
         >
           CALL4PAPER
-        </button>
+        </a>
       </div>
     </div>
   );
