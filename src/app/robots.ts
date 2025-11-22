@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { DOMAIN, SITE_BASE_PATH } from "@/config/constants";
 
 export const dynamic = "force-static";
 
@@ -8,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://salmorejo.tech/2026/sitemap.xml",
+    sitemap: `${DOMAIN}${SITE_BASE_PATH}/sitemap.xml`,
   };
 }

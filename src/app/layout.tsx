@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { DOMAIN, SITE_BASE_PATH } from "@/config/constants";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://salmorejo.tech"),
+  metadataBase: new URL(DOMAIN),
   title: {
     default: "Salmorejo Tech 2026 | El Evento Tecnológico de Córdoba",
     template: "%s | Salmorejo Tech 2026",
@@ -52,11 +53,11 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "/2026",
+    canonical: SITE_BASE_PATH,
   },
   icons: {
-    icon: "/2026/icon.png",
-    apple: "/2026/icon.png",
+    icon: `${SITE_BASE_PATH}/icon.png`,
+    apple: `${SITE_BASE_PATH}/icon.png`,
   },
 
   // --- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) ---
@@ -70,7 +71,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/2026/opengraph-image.jpg",
+        url: `${SITE_BASE_PATH}/opengraph-image.jpg`,
         width: 1200,
         height: 630,
         alt: "Logo Salmorejo Tech 2026",
@@ -86,7 +87,7 @@ export const metadata: Metadata = {
       "Infórmate sobre el evento tecnológico cordobés y cómo ser ponente.",
     site: "@AulaSL",
     creator: "@AulaSL",
-    images: ["/2026/opengraph-image.jpg"],
+    images: [`${SITE_BASE_PATH}/opengraph-image.jpg`],
   },
 
   verification: {

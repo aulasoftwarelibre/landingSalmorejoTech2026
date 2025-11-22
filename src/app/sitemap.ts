@@ -1,17 +1,18 @@
 import { MetadataRoute } from "next";
+import { DOMAIN, SITE_BASE_PATH } from "@/config/constants";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://salmorejo.tech/2026",
+      url: `${DOMAIN}${SITE_BASE_PATH}`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://salmorejo.tech/2026/aboutUs",
+      url: `${DOMAIN}${SITE_BASE_PATH}/aboutUs`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
