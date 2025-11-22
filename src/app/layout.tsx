@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/opengraph-image.jpg",
+        url: "/2026/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "Logo Salmorejo Tech 2026",
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
       "Infórmate sobre el evento tecnológico cordobés y cómo ser ponente.",
     site: "@AulaSL",
     creator: "@AulaSL",
-    images: ["/opengraph-image.jpg"],
+    images: ["/2026/opengraph-image.jpg"],
   },
 
   verification: {
