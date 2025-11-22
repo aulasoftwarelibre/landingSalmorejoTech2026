@@ -12,15 +12,15 @@ export default function body() {
         <div className={styles.image}>
           <Image
             src={logoSalmorejo}
-            alt="Logo"
+            alt="Logotipo Salmorejo Tech 2026"
             width={IMAGE_WIDTH}
             height={IMAGE_HEIGHT}
             priority
           />
         </div>
-        <p className={styles.text}>
+        <h1 className={styles.text}>
           LA CITA DE LA TECNOLOGÍA CÓRDOBESA REGRESA CON UNA ENERGÍA IMPARABLE
-        </p>
+        </h1>
         <button
           className={styles.miboton}
           onClick={() =>

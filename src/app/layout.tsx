@@ -15,11 +15,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://salmorejo.tech"),
   title: {
-    default: "Landing Salmorejo Tech 2026",
-    template: "%s | Salmorejo Tech", // Esto permite tener títulos dinámicos en otras páginas
+    default: "Salmorejo Tech 2026 | El Evento Tecnológico de Córdoba",
+    template: "%s | Salmorejo Tech 2026",
   },
   description:
-    "Infórmate sobre el evento tecnológico cordobés y cómo ser ponente en la edición 2026.",
+    "Únete a la mayor cita tecnológica de Córdoba. Networking, ponencias de primer nivel y mucho salmorejo. ¡Call for Papers disponible!",
 
   // --- 1. Palabras clave y Autor ---
   keywords: [
