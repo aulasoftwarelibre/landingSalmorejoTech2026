@@ -2,6 +2,7 @@
 import Navbar from "@/app/components/navbar/navbar";
 import Body from "@/app/components/body/body";
 import Footer from "@/app/components/footer/footer";
+import Background from "@/app/components/background/background";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
@@ -9,8 +10,8 @@ export default function Home() {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
   return (
     <div className="relative" style={{ minHeight: "100vh" }}>
+      <Background />
       <motion.div
-      className="relative z-10 flex flex-col flex-grow"
         initial="hidden"
         animate="visible"
         onAnimationComplete={() => setIsAnimationComplete(true)}
@@ -34,17 +35,6 @@ export default function Home() {
       >
         <Navbar />
         <Body />
-        <Body />
-
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-
         <Footer isVisible={isAnimationComplete} />
       </motion.div>
     </div>
