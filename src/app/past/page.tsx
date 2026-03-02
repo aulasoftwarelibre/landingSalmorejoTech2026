@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "@/app/components/navbar/navbar";
-import Body from "@/app/components/body/body";
+import {Past} from "@/app/components/past/past";
+import Body from "../components/body/body";
 import Footer from "@/app/components/footer/footer";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -10,7 +11,6 @@ export default function Home() {
   return (
     <div className="relative" style={{ minHeight: "100vh" }}>
       <motion.div
-      className="relative z-10 flex flex-col flex-grow"
         initial="hidden"
         animate="visible"
         onAnimationComplete={() => setIsAnimationComplete(true)}
@@ -33,18 +33,8 @@ export default function Home() {
         style={{ position: "relative", zIndex: 10 }}
       >
         <Navbar />
-        <Body />
-        <Body />
-
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-        <Body />
-
+        <Body/>
+        <Past/>
         <Footer isVisible={isAnimationComplete} />
       </motion.div>
     </div>
