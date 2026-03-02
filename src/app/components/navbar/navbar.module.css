@@ -144,6 +144,7 @@
   }
   .navbarOpen .hamburger {
     align-self: flex-end;
+    margin-top: 0.5rem;
   }
   .navList {
     flex-direction: column;
@@ -162,6 +163,7 @@
   .navListActive {
     opacity: 1;
     max-height: 100vh;
+    margin-top: 1rem;
   }
   .navList li {
     width: 100%;
